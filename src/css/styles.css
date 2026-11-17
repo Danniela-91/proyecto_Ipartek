@@ -111,13 +111,21 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid ;
+  border: 2px solid rgba(182, 179, 179, 0.419);
   border-radius: 20px;
   align-items: center;
 
-  padding: 0 0 8px 0;
+  padding: 0 0 15px 0;
   box-sizing: border-box;
+
+  transition:  .2s ease-in-out;
 } 
+
+#cards article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(93, 92, 91, 0.715);
+  border: 2px solid rgba(74, 74, 74, 0.362);
+}
 
 #cards img {
   width: 100%;
@@ -148,11 +156,15 @@ main {
 }
 
 #cards button:hover {
-color: #dfdcdc;
-background-color: #585757;
+color: #fff;
+background-color: #888686;
 box-shadow: 3px 6px 10px #585757;
 border: 1px solid #58575734;
+
+cursor: pointer;
+
 }
+
 
 
 
